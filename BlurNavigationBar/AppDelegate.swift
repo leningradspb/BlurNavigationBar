@@ -17,14 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appearance.configureWithTransparentBackground()
         appearance.backgroundColor = UIColor.clear
         appearance.backgroundEffect = UIBlurEffect(style: .light) // or light
-        
-        let scrollingAppearance = UINavigationBarAppearance()
-        scrollingAppearance.configureWithTransparentBackground()
-        scrollingAppearance.backgroundColor = .white // your view (superview) color
-        
         UINavigationBar.appearance().standardAppearance = appearance
-        UINavigationBar.appearance().scrollEdgeAppearance = scrollingAppearance
-        UINavigationBar.appearance().compactAppearance = scrollingAppearance
+        
+        
+       // if your scrolling appearance should be different
+//        let scrollingAppearance = UINavigationBarAppearance()
+//        scrollingAppearance.configureWithTransparentBackground()
+//        scrollingAppearance.backgroundColor = .white // your view (superview) color
+//        UINavigationBar.appearance().scrollEdgeAppearance = scrollingAppearance
+//        UINavigationBar.appearance().compactAppearance = scrollingAppearance
         
         return true
     }
